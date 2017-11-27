@@ -12,7 +12,13 @@ function santa() {
     var thisColor="";
     var thisReindeer="";
     var hohohoElement = document.getElementById("reindeer");
-    for (var i = 0; i < 8; i++) {
+    if (colors.length < reindeer.length) {
+        var iters = colors.length;
+    }   
+        else {
+        iters = reindeer.length;
+    }
+    for (var i = 0; i < iters; i++) {
        thisColor=colors[i];
        thisReindeer=reindeer[i];
         console.log(reindeer[i]);
